@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BudgetApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_income_home_text">Add Income</string>
+    <string name="add_income_button_text">Save Income Source</string>
+    <string name="add_income_type_hint">Enter income type</string>
+    <string name="add_income_amount_hint">Enter income amount</string>
+    <string name="view_string">View</string>
+    <string name="current_income">Current Income</string>
+    <string name="save_changes_button_text">Save Changes</string>
+</resources>

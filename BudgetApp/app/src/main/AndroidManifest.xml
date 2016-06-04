@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="za.co.wyldeweb.budgetapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.WithActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddIncomeActivity"
+            android:label="Add Income Source"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".EditIncomeActivity"
+            android:label="Add Income Source"
+            android:parentActivityName=".IncomeListActivity"/>
+        <activity android:name=".IncomeListActivity"
+            android:label="View Income"
+            android:parentActivityName=".MainActivity"/>
+        <provider
+            android:name="za.co.wyldeweb.budgetapp.Database.IncomeProvider"
+            android:authorities="za.co.wyldeweb.budgetapp.provider"
+            android:exported="true"
+            android:readPermission="za.co.wyldeweb.budgetapp.provider.READWRITE"
+            android:writePermission="za.co.wyldeweb.budgetapp.provider.READWRITE"/>
+    </application>
+
+</manifest>
